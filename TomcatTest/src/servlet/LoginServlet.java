@@ -89,7 +89,7 @@ public class LoginServlet extends HttpServlet {
 	        try {  
 	            if(rs.next()){  
 	            	 session.setAttribute("ID",rs.getString("ID")) ; 
-	                response.sendRedirect("Patient.jsp") ;  
+	                response.sendRedirect("index.html") ;  
 	                return;  
 	            }
 	            

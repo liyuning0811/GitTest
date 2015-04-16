@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+<title>Chart</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="" />
+<meta name="copyright" content="" />
+<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />                          <!-- CUSTOM STYLES -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/kickstart.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+<script>
+    var radarChartData = {
+        labels: ["Weight", "Height", "BMI", "BpH","BpL", "Bs"],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [74,177,23,140,83,5]
+            },
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [72,170,24,145,85,4]
+            }
+        ]
+    };
+
+    window.onload = function(){
+        window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+            responsive: true
+        });
+    }
+    </script>
+
+
+
+                                 <!-- KICKSTART -->
+</head><body>
+
+<!-- Menu Horizontal -->
+
+
+<div class="grid">
+	
+<!-- ===================================== END HEADER ===================================== -->
+	<ul class="alt">
+<li>Name:      hogehogehoge</li>
+<li>Address:   bangradish</li>
+<li>Phone:    000-1111-2222</li>
+<li>Sex:    Male</li>
+</ul>
+
+<div class="col_13">
+	<div class="col_11">
+	<h5>Chart Compare</h5>
+<div class="col_14">
+	<table  class="striped">
+<tr>
+<td></td>
+<td>Weigeht</td><td>Height</td><td>BMI</td><td>BpH</td><td>BpL</td><td>Bs</td>
+</tr>
+<tr>
+<td>User</td>
+<td>74</td><td>177</td><td>23</td><td>140</td><td>83</td><td>5</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>72</td><td>170</td><td>24</td><td>145</td><td>85</td><td>4</td>
+</tr>
+
+	</table>
+</div>
+
+
+	<p>
+		<canvas id="canvas" height="450" width="450"></canvas>
+	</p>
+
+	
+	
+	</div>
+	
+	<div class="col_3">
+	<h5></h5>
+	
+	</div>
+	
+	<hr />
+	
+	<div class="col_3">
+	<h4></h4>
+	<p></p>
+	</div>
+	
+	<div class="col_3">
+	<h4></h4>
+	<p></p>
+	</div>
+	
+	<div class="col_3">
+	<h4></h4>
+	<p></p>
+	</div>
+	
+</div>
+
+</div><!-- END GRID -->
+
+<!-- ===================================== START FOOTER ===================================== -->
+<div class="clear"></div>
+<div id="footer">
+    <center>&copy;Copyright 2014–2015 All Rights Reserved.PBL2-PHC-G</center></a>
+</div>
+
+</body></html>

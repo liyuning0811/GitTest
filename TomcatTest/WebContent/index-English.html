@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#slide').slideshow({
+        autoSlide    : true,
+        effect       : 'fade',
+        type         : 'repeat',
+        interval     : 3000,
+        duration     : 500,
+        imgHoverStop : true,
+        navHoverStop : true
+    });
+    $(window).load(function() {
+        $(".topNaviColumn").uniformHeight();
+    });
+});
+</script>
+<title>PHC-G</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1><a href="index.html">PHC-Grafical App</a></h1>
+        <div id="menu">
+            <ul>
+                <li class="home active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">日本語</a></li>
+            </ul>
+        </div><!-- /#menu -->
+    </div><!-- /#header -->
+    <div id="slide">
+        <ul class="slideInner">
+            <li><img src="images/icatch01.jpg" alt="" width="940" height="300" /></li>
+            <li><img src="images/icatch02.jpg" alt="" width="940" height="300" /></li>
+            <li><img src="images/icatch03.jpg" alt="" width="940" height="300" /></li>
+        </ul>
+         <div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+         <div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+         <div class="controlNav"></div>
+    </div><!-- /#slide -->
+    <div id="contents">
+        <div class="information">
+                <h2>PLOFILE</h2>
+                <dl>
+                    <dt>name</dt>
+                    <dd>hogehogehoge</dd>
+                    <dt>address</dt>
+                    <dd>bangradish</dd>
+                    <dt>phone</dt>
+                    <dd>000-1111-2222</dd>
+                    <dt>sex</dt>
+                    <dd>man</dd>
+                </dl>
+        </div>
+        <div class="topNavi">
+            <div class="topNaviColumn">
+                <h2>height</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <table>
+                <tr >
+                <td>data</td>
+                <td>180</td></tr>
+                <tr>
+                <td>comparison</td>
+                <td><img src="images/yazirusi.jpg" alt="" width="50" height="50" /></td></tr>
+                <tr>
+                <td>evaluate</td>
+                <td> <span class="label label-danger">Danger</span></td></tr>
+                </table>
+                
+
+                <p class="topNaviDetail"><a href="line.html">detail</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>weight</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <p>data</p>
+                <p>comparison</p>
+                <p>evaluate</p>
+                <p class="topNaviDetail"><a href="radar.html">detail</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>waist・hip</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <p>data</p>
+                <p>comparison</p>
+                <p>evaluate</p>
+                <p class="topNaviDetail"><a href="radar.html">detail</a></p>
+            </div>
+        </div><!-- /.topNaviColumn -->
+            <div class="topNavi">
+            
+            <div class="topNaviColumn">
+                <h2>ＢＭＩ</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <p>data</p>
+                <p>comparison</p>
+                <p>evaluate</p>
+                <p class="topNaviDetail"><a href="radar.html">detail</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>blood-suger level</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <p>data</p>
+                <p>comparison</p>
+                <p>evaluate</p>
+                <p class="topNaviDetail"><a href="radar.html">detail</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>blood pressure</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <p>data</p>
+                <p>comparison</p>
+                <p>evaluate</p>
+                <p class="topNaviDetail"><a href="radar.html">detail</a></p>
+            </div>
+            </div>
+            <!-- /.topNaviColumn -->
+        </div><!-- /.topNavi -->
+        
+            <div class="information">
+                <h2>karte・advice</h2>
+                <textarea rows="7" cols="140"></textarea>
+            </div><!-- /.information -->
+
+            
+        <!-- /.conL -->
+        
+    </div><!-- /#contents -->
+    </div><!-- /#container -->
+    <div id="footer">
+        <div class="copyright">Copyright &copy; 2013 YOUR SITE NAME All Rights Reserved.</div>
+    </div><!-- /#footer -->
+
+<div id="pageTop">
+    <a href="#">back to top</a>
+</div><!-- /#pageTop -->
+
+</body>
+</html>

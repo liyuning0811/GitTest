@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="pointer_timer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#slide').slideshow({
+        autoSlide    : true,
+        effect       : 'fade',
+        type         : 'repeat',
+        interval     : 3000,
+        duration     : 500,
+        imgHoverStop : true,
+        navHoverStop : true
+    });
+    $(window).load(function() {
+        $(".topNaviColumn").uniformHeight();
+    });
+});
+</script>
+<title>PHC-G</title>
+</head>
+<body onLoad="timer()"  id="count">
+<form action="#" name="form1">
+<input type="hidden" name="field1" size="8">
+</form>
+<textarea  style="display:none;" id="txar">ボタンを押すとテキストが変わります</textarea>
+<div id="container">
+    <div id="header">
+        <h1><a href="index.html">PHC-Grafical</a></h1>
+        <div id="menu">
+            <ul>
+                <li class="home active"><a href="index.html">ホーム</a></li>
+                <li><a href="index-English.html">English</a></li>
+                <li><a href="sample.html">設定</a></li>
+            </ul>
+        </div><!-- /#menu -->
+    </div><!-- /#header -->
+    <div id="slide">
+        <ul class="slideInner">
+            <li><img src="images/icatch01.jpg" alt="" width="940" height="300" /></li>
+            <li><img src="images/icatch02.jpg" alt="" width="940" height="300" /></li>
+            <li><img src="images/icatch03.jpg" alt="" width="940" height="300" /></li>
+        </ul>
+         <div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+         <div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+         <div class="controlNav"></div>
+    </div><!-- /#slide -->
+    <div id="contents">
+        <div class="information">
+                <h2>プロフィール</h2>
+                <dl>
+                    <dt>name</dt>
+                    <dd>hogehogehoge</dd>
+                    <dt>address</dt>
+                    <dd>bangradish</dd>
+                    <dt>phone</dt>
+                    <dd>000-1111-2222</dd>
+                    <dt>sex</dt>
+                    <dd>man</dd>
+                </dl>
+        </div>
+        <div class="topNavi">
+            <div class="topNaviColumn">
+                <h2>身長</h2>
+                <div class="topNaviPhoto"><img src="images/height.jpg" alt="" /></div>
+                <table>
+                <tr >
+                <td>データ</td>
+                <td>177(cm)</td></tr>
+                <tr>
+                <td>前回比</td>
+                <td><img src="images/up.png" alt="" width="50" height="50" /></td></tr>
+                <tr>
+                <td>四段階評価</td>
+                <td> <span class="label label-danger">safe</span></td></tr>
+                </table>
+                
+
+                <p class="topNaviDetail"><a href="Height Page.html" class="export">詳しくはこちら</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>体重</h2>
+                <div class="topNaviPhoto"><img src="images/weight.jpg" alt="" /></div>
+                <table>
+                <tr >
+                <td>データ</td>
+                <td>74 (kg)</td></tr>
+                <tr>
+                <td>前回比</td>
+                <td><img src="images/up.png" alt="" width="50" height="50" /></td></tr>
+                <tr>
+                <td>四段階評価</td>
+                <td> <span class="label label-danger">danger</span></td></tr>
+                </table>
+                <p class="topNaviDetail"><a href="Weight Page.html" class="export">詳しくはこちら</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>ウエスト・ヒップ</h2>
+                <div class="topNaviPhoto"><img src="images/waist.jpg" alt="" /></div>
+                <table>
+                <tr >
+                <td>データ</td>
+                <td>70,90 (cm)</td></tr>
+                <tr>
+                <td>前回比</td>
+                <td><img src="images/up.png" alt="" width="50" height="50" /></td></tr>
+                <tr>
+                <td>四段階評価</td>
+                <td> <span class="label label-danger">safe</span></td></tr>
+                </table>
+                <p class="topNaviDetail"><a href="index.html" class="export">詳しくはこちら</a></p>
+            </div>
+        </div><!-- /.topNaviColumn -->
+            <div class="topNavi">
+            
+            <div class="topNaviColumn">
+                <h2>ＢＭＩ</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <table>
+                <tr >
+                <td>データ</td>
+                <td>23</td></tr>
+                <tr>
+                <td>前回比</td>
+                <td><img src="images/down.png" alt="" width="50" height="50" /></td></tr>
+                <tr>
+                <td>四段階評価</td>
+                <td> <span class="label label-danger">danger</span></td></tr>
+                </table>
+                <p class="topNaviDetail"><a href="index.html" class="export">詳しくはこちら</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>血糖値</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <table>
+                <tr >
+                <td>データ</td>
+                <td>96 (mg/dl)</td></tr>
+                <tr>
+                <td>前回比</td>
+                <td><img src="images/down.png" alt="" width="50" height="50" /></td></tr>
+                <tr>
+                <td>四段階評価</td>
+                <td> <span class="label label-danger">danger</span></td></tr>
+                </table>
+                <p class="topNaviDetail"><a href="Radar Page.html" class="export">詳しくはこちら</a></p>
+            </div>
+            <div class="topNaviColumn">
+                <h2>血圧</h2>
+                <div class="topNaviPhoto"><img src="images/photo01.jpg" alt="" /></div>
+                <table>
+                <tr >
+                <td>データ</td>
+                <td>140-86 (mmHg)</td></tr>
+                <tr>
+                <td>前回比</td>
+                <td><img src="images/down.png" alt="" width="50" height="50" /></td></tr>
+                <tr>
+                <td>四段階評価</td>
+                <td> <span class="label label-danger">safe</span></td></tr>
+                </table>
+                <p class="topNaviDetail"><a href="Blood Page.html" class="export">詳しくはこちら</a></p>
+            </div>
+            </div>
+            <CENTER><p class="Button"><a href="Radar Page.html">すべてのデータ参照</a></p></CENTER>
+            <!-- /.topNaviColumn -->
+        </div><!-- /.topNavi -->
+        
+            <div class="information">
+                <h2>カルテ・アドバイス</h2>
+                <textarea rows="7" cols="140"></textarea>
+            </div><!-- /.information -->
+
+            
+        <!-- /.conL -->
+        
+    </div><!-- /#contents -->
+    </div><!-- /#container -->
+    <div id="footer">
+        <div class="copyright">Copyright &copy; 2014-2015 PHC-G All Rights Reserved.</div>
+    </div><!-- /#footer -->
+
+<div id="pageTop">
+    <a href="#">ページのトップへ戻る</a>
+</div><!-- /#pageTop -->
+
+</body>
+</html>
